@@ -1,5 +1,9 @@
 MoonClip::Application.routes.draw do
-  root :to => 'browse#home'
+  resources :microposts
+
+  resources :users
+
+  #root :to => 'browse#home'
   get "browse/home"
   get "browse/profile"
   get "browse/about"
